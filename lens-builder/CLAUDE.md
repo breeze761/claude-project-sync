@@ -16,13 +16,20 @@ Custom lens tint builder for Gazal Eyecare. First-to-market interactive tool wit
 - Hosting: Local network at Gazal Eyecare
 
 ## Key Files
-- `index.html` - Current production version (main file)
-- `server.js` - Local dev server
-- `public/` - Static assets
-- `lens227.html` - Legacy version (archived, do not use)
+- `public/index-test.html` - **CURRENT PRODUCTION** (running at Gazal Eyecare shop)
+- `public/index.html` - Previous version
+- `public/lens305.html` - Numbered version (consider consolidating)
+- `server.js` - Profile API server (port 3001)
+- `START-LENS-BUILDER.bat` - Starts both servers and opens browser
+
+## How to Run
+Run `START-LENS-BUILDER.bat` which:
+1. Starts Profile API on http://localhost:3001
+2. Starts http-server on http://localhost:8080 (serves `public/` folder)
+3. Opens http://localhost:8080/index-test.html
 
 ## Development Guidelines
-All development should be done in `index.html`. The numbered versions (lens144 through lens227) are archived and should not be modified.
+All development should be done in `public/index-test.html`. The numbered versions in `backup/` folder (lens1 through lens227) are archived.
 
 ## Sync Config
 SYNC_URL=https://claude-sync-api.vercel.app
