@@ -2,6 +2,28 @@
 
 > Claude Sync Enabled
 
+## CRITICAL SHORTCUTS - Use These!
+
+### "ss" - Save Session (use before closing)
+**When user says "ss", "save", or "save session", do ALL of the following:**
+1. Update this CLAUDE.md with detailed notes (problems, solutions, dead ends, files changed)
+2. Add to Lessons Learned if we discovered something important
+3. Document approaches that didn't work so we don't repeat them
+4. Create structured summary (Problem → Root Cause → Solution → Files → Next Steps)
+5. Commit to git with descriptive message and push
+6. List pending tasks for next session
+
+### "rr" - Resume/Read (use at start of session)
+**When user says "rr", "resume", or "read project", do ALL of the following:**
+1. Read this CLAUDE.md file completely
+2. Read any other .md files in the project root
+3. Run `git log --oneline -10` to see recent changes
+4. Run `git status` to see current state
+5. Summarize: what we were working on, current status, and pending tasks
+6. Ask if user wants to continue where we left off or start something new
+
+---
+
 ## Quick Context
 Luxury boutique eyewear directory at vieweyewear.com. Monetized directory of independent optical boutiques - Gazal wholesale accounts get free listings, competitors pay $9/mo.
 
